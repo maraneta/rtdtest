@@ -61,24 +61,27 @@ import os
 #print os.path.abspath("../ghs")
 
 
-ghs_path = os.path.abspath('../')
-django_path = os.path.abspath('../..')
+ghs_path = os.path.abspath('.')
 
-print ghs_path
-print django_path
+#django_path = os.path.abspath('../..')
 
-sys.path.insert(0, ghs_path)
-sys.path.insert(0, django_path)
+#print ghs_path
+#print django_path
+
+#sys.path.insert(0, ghs_path)
+sys.path.append(os.path.abspath('../src/'))
+
+#sys.path.insert(0, django_path)
 
 #print sys.path
 
 #sys.path.insert(0, '/var/www/django/ghs/')
 # sys.path.insert(0, '/home/matta/workspace/ghs/')
 
-# sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 # os.environ['DJANGO_SETTINGS_MODULE'] = 'ghs.settings'
 # from django.conf import settings
-
+# 
 # import settings
 # from django.core.management import setup_environ
 # setup_environ(settings)
@@ -93,7 +96,7 @@ sys.path.insert(0, django_path)
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-#    'sphinx.ext.autodoc',
+    'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
 ]
 

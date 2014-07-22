@@ -45,3 +45,12 @@ A user can find the hazards of a flavor in a few steps:
 2. Find the CAS numbers and weights of all ingredients in the product's formula.
 3. Input that data into ``calculate_flavor_hazards`` to get the product's calculated hazards.
 
+
+Main Functions
+==============
+
+.. automodule:: hazard_calculator.tasks
+
+
+.. autofunction:: import_GHS_ingredients_from_document   
+.. autofunction:: calculate_flavor_hazards  
