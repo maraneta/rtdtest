@@ -60,8 +60,13 @@ import os
 
 #print os.path.abspath("../ghs")
 
+import django 
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
 
-ghs_path = os.path.abspath('.')
+
+
+
+#ghs_path = os.path.abspath('.')
 
 #django_path = os.path.abspath('../..')
 
@@ -79,6 +84,9 @@ sys.path.append(os.path.abspath('../src/'))
 # sys.path.insert(0, '/home/matta/workspace/ghs/')
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
+
+
 # os.environ['DJANGO_SETTINGS_MODULE'] = 'ghs.settings'
 # from django.conf import settings
 # 
